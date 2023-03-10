@@ -36,9 +36,9 @@ jobs:
       compose-file-cache-key: ${{ needs.render-compose-file.outputs.compose-file-cache-key }}
       compose-file-cache-path: docker-compose.map-envs.gha.yml
       server: https://app.uffizzi.com/
-      secrets:
-        personal-access-token: ${{ secrets.PT }}
     permissions:
       contents: read
       pull-requests: write
       id-token: write
+    secrets:
+      personal-access-token: ${{ secrets.PT }}
