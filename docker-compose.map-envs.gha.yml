@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: ghcr.io/zipofar/test-node:latest
+    image: ghcr.io/git-test2023/test-node:latest
 
   continuous_preview:
     delete_preview_after: 10h
